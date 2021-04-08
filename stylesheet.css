@@ -1,0 +1,109 @@
+
+
+*{
+    font-family: 'Great Vibes', cursive;
+    font-size: 70px;
+    font-style:unset;
+  
+
+}
+html{
+    text-align: center;
+    margin-left: 15%;
+}
+
+
+
+body{
+    background-color:white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+
+
+}
+
+.top{
+    background-image: url(images/blackbg.jpg);
+    background-size: cover;
+    padding: 2%;
+    border: black;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(8, 8, 8);
+    box-shadow:20px 20px 5px gray;
+ 
+    
+}
+
+
+h1{
+    color: whitesmoke;
+}
+
+div.container{
+    position:relative;
+    width: auto;
+    height: auto;
+    text-align: center;
+    transition: width 1s, height 1s;
+    border:thin;
+    opacity: 1;
+    border-radius: 15px;
+    box-shadow:20px 20px 20px gray;
+
+
+}
+.box{
+    position: relative;
+    float: left;
+}
+
+div.box:hover{
+    border: thin;
+    border-radius: 15px;
+    opacity: .2;
+    box-shadow:20px 20px 20px gray;
+ 
+    
+
+
+}
+
+
+
+div.container img{
+    width: auto;
+    height: 300px; 
+    border-radius: 20px;
+    object-fit: scale-down;
+   
+}
+
+
+div.container video{
+    width: auto;
+    height: 300px; 
+    border-radius: 20px;
+    object-fit: scale-down;
+   
+
+}
+
+
+.bottom{
+    margin-bottom: 0%;
+    padding: 5%;
+  
+    background-color: black;
+    background-image: url(images/blackbg.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(8, 8, 8);
+    box-shadow:20px 20px 5px gray;
+}
+
