@@ -14,25 +14,7 @@ html{
     background-repeat: no-repeat;
 
 }
-.navbar{
-    border: thin;
-    background-color: black;
-    height: 50px;
-}
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-li{
-   
-}
-a{
-    display: block;
-    padding: 8px;
-    background-color: white;
-   
-}
+
 
 
 
@@ -40,9 +22,9 @@ a{
 
 .top{
     background: url(images/blue\ lip.jpeg) left no-repeat, url(images/orange\ lip.jpg) right no-repeat;
-    background-size: 130px, 130px, auto;
+    background-size: 500px, 500px, auto;
     border: black;
-    height: 250px;
+    height: 400px;
     text-align: center;
     background-color: rgb(255, 248, 248);
   
@@ -69,7 +51,6 @@ div.container{
    
 }
 .box{
-
     float: left;
    
 
@@ -90,7 +71,7 @@ div.box:hover{
 
 
 div.container img{
-    width: 266px;
+    width: 262px;
     height: auto;
      
     border-radius: 10px;
@@ -99,13 +80,20 @@ div.container img{
 }
 
 
-
-
-.bottom{
-
-    height: 100px;
+.navbar{
+    border: thin;
     background-color: rgb(68, 51, 51);
-    background-image: url();
-    text-align: center;
+    height: 50px;
+    width: auto;
+   
+    margin-top: 5%;
 }
+
+div.navbar img{
+    height: 50px;
+    width: 120px;
+    border-radius: 5px;
+}
+
+
 
