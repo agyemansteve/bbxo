@@ -1,41 +1,112 @@
 
 
 *{
-    font-family: 'Great Vibes', cursive;
-    font-style:oblique;
+    font-family: 'Pinyon Script', cursive;
+    
   
 
 }
 html{
     position: relative;
-    background-image: url();
+    background-image: url(images/flowers.jpeg);
+    background-color: black;
     background-position:center;
-    background: size 1000px fixed;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+   
 
 }
+.nav{
+    height: 8%;
+    opacity: .8;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(2, 2, 2);
+    position: fixed;
+    top: 0;
+    width: 100%;
 
+  }
+  
 
-
-
+  li {
+    float: left;
+    border-right: 1px solid #bbb;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 40px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: rgb(77, 71, 71);
+  }
 
 
 .top{
-    background: url(images/blue\ lip.jpeg) left no-repeat, url(images/orange\ lip.jpg) right no-repeat;
     background-size: 500px, 500px, auto;
     border: black;
     height: 400px;
     text-align: center;
-    background-color: rgb(255, 248, 248);
-  
- 
-    
+    background-color: rgb(255, 249, 249);
+    background: transparent;
+}
+
+div.top h1{
+    color: rgb(245, 236, 236);
+    outline: black;
+    font-size: 150px;
+    font: 3em;
+
 }
 
 
-h1{
-    color: black;
 
+
+.middle{
+    background: url(images/blue\ lip.jpeg) left no-repeat, url(images/orange\ lip.jpg) right no-repeat;
+    background-size: 400px, 400px, auto;
+    background-color: rgb(255, 249, 249);
+    border: black;
+    height: 300px;
+    font-size: 25px;
+    background-color: rgb(255, 249, 249);
+   
+    opacity: 1;
+}
+
+.middle:hover{
+   opacity: .9;
+}
+
+.btn{
+    background-size: auto 100px;
+   
+    margin-bottom: 50%;
+    border-radius: 10px;
+    background-color: black;
+    padding: 30px 80px;
+    font-size: px;
+    cursor: pointer;
+    color: white;
+
+}
+.btn:hover{
+    color:red;
+}
+
+
+div.middle h1{
+    
 }
 
 div.container{
@@ -71,7 +142,7 @@ div.box:hover{
 
 
 div.container img{
-    width: 262px;
+    width: 265px;
     height: auto;
      
     border-radius: 10px;
