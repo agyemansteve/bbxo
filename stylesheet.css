@@ -2,71 +2,85 @@
 
 *{
     font-family: 'Great Vibes', cursive;
-    font-size: 70px;
-    font-style:unset;
+    font-style:oblique;
   
 
 }
 html{
-    text-align: center;
-    margin-left: 15%;
-}
-
-
-
-body{
-    background-color:white;
-    background-position: center;
-    background-size: cover;
+    position: relative;
+    background-image: url();
+    background-position:center;
+    background: size 1000px fixed;
     background-repeat: no-repeat;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-
 
 }
+.navbar{
+    border: thin;
+    background-color: black;
+    height: 50px;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+   
+}
+a{
+    display: block;
+    padding: 8px;
+    background-color: white;
+   
+}
+
+
+
+
 
 .top{
-    background-image: url(images/blackbg.jpg);
-    background-size: cover;
-    padding: 2%;
+    background: url(images/blue\ lip.jpeg) left no-repeat, url(images/orange\ lip.jpg) right no-repeat;
+    background-size: 130px, 130px, auto;
     border: black;
-    border-radius: 10px;
+    height: 250px;
     text-align: center;
-    background-color: rgb(8, 8, 8);
-    box-shadow:20px 20px 5px gray;
+    background-color: rgb(255, 248, 248);
+  
  
     
 }
 
 
 h1{
-    color: whitesmoke;
+    color: black;
+
 }
 
 div.container{
-    position:relative;
-    width: auto;
-    height: auto;
-    text-align: center;
+  
+   
+    height: 300px;
     transition: width 1s, height 1s;
     border:thin;
     opacity: 1;
     border-radius: 15px;
-    box-shadow:20px 20px 20px gray;
-
-
+    
+    
+   
 }
 .box{
-    position: relative;
+
     float: left;
+   
+
+
 }
 
 div.box:hover{
     border: thin;
     border-radius: 15px;
-    opacity: .2;
-    box-shadow:20px 20px 20px gray;
+    opacity: .5;
+    
  
     
 
@@ -76,34 +90,22 @@ div.box:hover{
 
 
 div.container img{
-    width: auto;
-    height: 300px; 
-    border-radius: 20px;
-    object-fit: scale-down;
+    width: 266px;
+    height: auto;
+     
+    border-radius: 10px;
+  
    
 }
 
 
-div.container video{
-    width: auto;
-    height: 300px; 
-    border-radius: 20px;
-    object-fit: scale-down;
-   
-
-}
 
 
 .bottom{
-    margin-bottom: 0%;
-    padding: 5%;
-  
-    background-color: black;
-    background-image: url(images/blackbg.jpg);
-    background-size: cover;
-    border-radius: 10px;
+
+    height: 100px;
+    background-color: rgb(68, 51, 51);
+    background-image: url();
     text-align: center;
-    background-color: rgb(8, 8, 8);
-    box-shadow:20px 20px 5px gray;
 }
 
