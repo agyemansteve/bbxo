@@ -1,23 +1,28 @@
 
 
-*{
-    font-family: 'Pinyon Script', cursive;
+*{ 
     
-  
+    
+    
 
+}
+
+hr{
+    color: white;
 }
 html{
     position: relative;
     background-image: url(images/flowers.jpeg);
     background-color: black;
     background-position:center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;  
+    
    
 
 }
 .nav{
-    height: 8%;
+    height: 10px;
     opacity: .8;
 }
 ul {
@@ -28,7 +33,9 @@ ul {
     background-color: rgb(2, 2, 2);
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
+    font-variant: small-caps;
 
   }
   
@@ -45,8 +52,14 @@ ul {
     padding: 30px 40px;
     text-decoration: none;
   }
+  li img{
+    display: block;
+    top: 0;
+    left: 90%;
+    position: absolute;
+  }
   
-  /* Change the link color to #111 (black) on hover */
+  
   li a:hover {
     background-color: rgb(77, 71, 71);
   }
@@ -55,7 +68,7 @@ ul {
 .top{
     background-size: 500px, 500px, auto;
     border: black;
-    height: 400px;
+    height: 200px;
     text-align: center;
     background-color: rgb(255, 249, 249);
     background: transparent;
@@ -64,107 +77,161 @@ ul {
 div.top h1{
     color: rgb(245, 236, 236);
     outline: black;
-    font-size: 150px;
-    font: 3em;
+    font-size: 100px;
+    font-family: 'Pinyon Script', cursive;
+    animation-name: anime1;
+    animation-duration: 1.5s;
+
 
 }
 
+.btn{
+    border-radius: 5px;
+    margin-left: 42%;
+    background-color: rgb(5, 3, 3);
+    color:white;
+    font-size: 20px;
+    cursor: pointer;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+    text-align: center;
+    padding: 20px 40px;
+    animation-name: anime1;
+    animation-duration: 15s;
+    animation-delay: 0s;
+
+
+}
+.btn:hover{
+    opacity: 1; 
+}
+.btn a:visited{
+    color:rgb(243, 243, 243);
+}
+
+.btn a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+}
 
 
 
 .middle{
     background: url(images/blue\ lip.jpeg) left no-repeat, url(images/orange\ lip.jpg) right no-repeat;
-    background-size: 400px, 400px, auto;
+    background-size: 400px, 400px, 50%;
     background-color: rgb(255, 249, 249);
     border: black;
     height: 300px;
+    width: auto;
     font-size: 25px;
-    background-color: rgb(255, 249, 249);
-   
     opacity: 1;
+    text-align: center;
+    
+}
+.herotext{
+    text-align: center;
+    position: relative;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(19, 17, 17);
 }
 
 .middle:hover{
    opacity: .9;
 }
 
-.btn{
-    background-size: auto 100px;
-   
-    margin-bottom: 50%;
-    border-radius: 10px;
-    background-color: black;
-    padding: 30px 80px;
-    font-size: px;
-    cursor: pointer;
-    color: white;
 
-}
-.btn:hover{
-    color:red;
-}
-
-
-div.middle h1{
-    
-}
 
 div.container{
-  
-   
-    height: 300px;
-    transition: width 1s, height 1s;
-    border:thin;
-    opacity: 1;
+    height: 400px;
     border-radius: 15px;
-    
-    
-   
-}
-.box{
-    float: left;
-   
-
-
-}
-
-div.box:hover{
-    border: thin;
-    border-radius: 15px;
-    opacity: .5;
-    
+    width: 99%;
+    margin: auto;
  
+}
+
+div.box{
+    height: auto;
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+.b0{
+    animation-name: anime1;
+    animation-duration: 10s;
+    animation-delay: 0s;
+}
+
+.b1{
+    animation-name: anime1;
+    animation-duration: 12s;
+    animation-delay: 0s;
+  
+}
+.b2{
+    animation-name: anime1;
+    animation-duration: 14s;
+    animation-delay: 0s;
+}
+.b3{
+    animation-name: anime1;
+    animation-duration: 16s;
+    animation-delay: 0s;
+}
+.b4{
+    animation-name: anime1;
+    animation-duration: 18s;
+    animation-delay: 0s;
+}
+div.container img{
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+    transition: width .5s, height 1s;
+    overflow: hidden;
     
 
-
-}
-
-
-
-div.container img{
-    width: 265px;
-    height: auto;
-     
-    border-radius: 10px;
+  
   
    
+}  
+
+@keyframes anime1 {
+    from{opacity:0;}
+    to{opacity: 1}
+    
 }
 
-
-.navbar{
-    border: thin;
-    background-color: rgb(68, 51, 51);
-    height: 50px;
-    width: auto;
+div.container img:hover{
+   width: 100%;
+   height: auto;
+   opacity: 1;
+   position: static;
+   margin-left: 0%;
    
-    margin-top: 5%;
+
+   
 }
 
-div.navbar img{
-    height: 50px;
-    width: 120px;
-    border-radius: 5px;
+
+
+
+
+
+.bnav{
+    border: thin;
+    background-color: rgb(0, 0, 0);
+    height: 25px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    
 }
+
 
 
 
