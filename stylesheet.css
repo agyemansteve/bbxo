@@ -95,7 +95,7 @@ ul {
 
 
 div.container{
-    height: 500px;
+    height: 578px;
     width: 100%;
     margin-top: 4.5%;
     background-position: center;
@@ -123,17 +123,24 @@ div.container{
 .slider{
     overflow: hidden;
     position: absolute;
-    margin-top: 5%;
-    width: 300px;
-    height: 350px;
+    margin-top: 0%;
+    margin-left: 0;
+    width: 390px;
+    height: 100%;
     display: flex;
+   
+    
 }
+
 
 .slider img{
     position: relative;
-    width: 100%;
-    animation: 20s slider infinite;
+    width: auto;
+    height: 100%;
+    animation: 70s slider linear infinite;
 }
+
+
 
 
 
@@ -148,16 +155,7 @@ div.container{
     text-align: center;
     opacity: .9;
 }
-.triangle-down {
-    width: 0;
-	height: 0;
-	border-left: 15px solid transparent;
-	border-right: 15px solid transparent;
-	border-bottom: 24px solid rgb(255, 255, 255);
-    position: absolute;
-    margin-left: 49%;
-    margin-top: -1%;
-}
+
 .hero-text p{
     color: rgb(19, 14, 14);
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -182,9 +180,7 @@ div.container{
 }
 @keyframes slider {
     0%{right:0; }
-    20%{right:50%;}
-    30%{right:100%;}
-    70%{right:200%;}
-    100%{right:300%;}
+    
+    100%{right:200%;}
     
 }
