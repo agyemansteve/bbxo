@@ -83,7 +83,7 @@ div.welcome{
 div.top{ 
     background: url(images/pinkBrush2.jpg);
     background-size: cover;
-    height: 500px; 
+    
    
     background-attachment: fixed;
     
@@ -93,20 +93,43 @@ div.top{
 
 
 .topInner{
-  
+  height: 660px;
+}
+.vidContainer{
+  width: 100%;
 }
 
-#heroImg{
-    width: 100%;
+#heroVid{
+    width: 98.8%;
+}
+
+#bookImg{
+  width: 50%;
+}
+h1{
+  font-family: 'Permanent Marker', cursive;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+h2{
+  font-family: "Sofia", sans-serif;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 
 }
 
-
-
-.text {
+.text1 {
     color: #5d5353c4;
-    
+    position: relative;
+    top: 30%;
     text-align: center;
+}
+.text2 {
+  color: #5d5353c4;
+  margin: 4%;
+  text-align: center;
 }
 
 div.main{
