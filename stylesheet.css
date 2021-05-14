@@ -16,7 +16,7 @@ header{
 nav.navbar{
     height: 96px;
     text-align: center;
-
+    background: #ea89a7;
 }
 
 
@@ -53,6 +53,7 @@ div.welcome{
     background: url(images/bg\ \(9\).jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     background-size: 100%;
     margin-top: -4.5%;
     height: 500px;
@@ -62,7 +63,7 @@ div.welcome{
 
 .welcomeInner{ 
     background: url(images/topbg.png);
-    background-attachment: fixed;
+    
     background-size:950px ;
     background-position: 60% 55%;
     color: rgb(8, 8, 8);
@@ -83,8 +84,6 @@ div.welcome{
 div.top{ 
     background: url(images/pinkBrush2.jpg);
     background-size: cover;
-    
-   
     background-attachment: fixed;
     
 
@@ -93,22 +92,37 @@ div.top{
 
 
 .topInner{
-  height: 660px;
+  height: 93.5%;
 }
 .vidContainer{
   width: 100%;
 }
 
 #heroVid{
-    width: 98.8%;
+  width: 100%;
+  border: 4px double #ea89a7;
+  border-radius: 34px;
 }
 
 #bookImg{
   width: 50%;
 }
+.btn{
+  background: black;
+  color: #e67f9b;
+  border-color: #d66b8a;
+}
+
+.btn-danger:hover {
+  color: #fcf5f5;
+  background-color: #181314;
+  border-color: #f8f4f5;
+}
+
 h1{
-  font-family: 'Permanent Marker', cursive;
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  font-family: 'Codystar', cursive;
+  font-size:3em;
+  -webkit-text-fill-color: #ec7090;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
@@ -119,24 +133,53 @@ h2{
   -webkit-text-stroke-color: black;
 
 }
+h3{
+  font-family: "Sofia", sans-serif;
+  font-size: 23px;
+  color: #ea89a7;
+  background: #000000bf;;
+   
+}
+hr {
+  margin: 1rem 0;
+  color: #ecdcdf;
+  background-color: currentColor;
+      /* margin: 1rem 0; */
+    
+      /* background-color: currentColor; */
+      /* border: 0; */
+      opacity: 1;
+      padding: 1px;
+}
 
 .text1 {
-    color: #5d5353c4;
-    position: relative;
-    top: 30%;
-    text-align: center;
-}
-.text2 {
-  color: #5d5353c4;
-  margin: 4%;
+  background: url(images/bg\ \(1\).png);
+  background-size: 37%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: #ea89a7;
+ 
+  
+  top: 26%;
   text-align: center;
+  border-radius: 10px;
+}
+
+.text2{
+  color: #ffffffc4;
+  position: relative;
+  top: 17%;
+}
+.instagram{
+  font-size: 15px;
 }
 
 div.main{
     background:url(images/pinkBg.jpg);
     background-attachment: fixed;
     background-size: cover;
-    margin-top: -5%; 
+   /* margin-top: -5%; */
     height: 600px;
 }
 
