@@ -1,23 +1,18 @@
-/*let slideIndex = 0;
-showSlides();
 
-function showSlides() {
-  let i;
-  const slides = document.querySelectorAll(".mySlides");
-  const dots = document.querySelectorAll(".dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+// resize nav-bar and changing opacity on scroll
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+    document.querySelector(".logo").style.width = "50%";
+    
+  } else {
+    document.querySelector(".logo").style.width = "90%";
+    
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 6000); 
 }
-*/
+
 
 function showSlides(n) {
   let i;

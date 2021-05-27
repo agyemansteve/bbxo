@@ -1,19 +1,14 @@
-
 body{
-  background: url(images/pinkBrush2.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+  background: black;
 }
+
 
 header{
    
     height: 82px;
 
 }
-nav{
-  background: transparent;
-    
-}
+
 
 .nav-tabs {
   border-bottom: 1px solid #ff66c4;
@@ -22,7 +17,7 @@ nav{
 
 nav.navbar{
   height: 83px;
-  font-size: 24px;
+  font-size: 18px;
 
 }
 .navbar-toggle{
@@ -37,64 +32,67 @@ nav.navbar{
   color: rgb(236 68 152);
 }
 
-
-
-#logo{
+.logo{
     
-  width: 100%;
+  width: 90%;
+  transition: 1s;
+  
 }
 
 .svg{
-    position: relative;
-    right: -84%;
+    color: white;
 }
-
-
-
-#nameLogo{
-    height: 35px;
-    margin-top: -14%;
-    margin-left: 37%;
-}
-
 
 .nav-container{
   background: black;
   
 }
+
 div.container{
    
     text-align: center;
-
+    border-radius: 5px;
  
 }
 
+
+
+/* Home**********************/
+
+
+
+
+
+
 div.home{
   width: 100%;
- /*height: 741px; */
+
   background: white;
    
   
 }
 
-div.welcome{
-    
-    
 
+.text2{
+  height: 100%;
   
-    
+  text-shadow: 0 0 19px black;
+ 
+  background: url(images/Bella.gif);
+
+  background-size: cover;
+
+  background-repeat: no-repeat;
 }
 
-.welcomeInner{ 
-   
-   
-    
-   
+#heroVid{
+ 
+  
+width: 100%;
+
+border-radius: 258PX; 
+
 }
-
-
-
-
 
 
 
@@ -114,61 +112,32 @@ div.top{
   height: 93.5%;
 }
 
+#bookVid{
+  width: 100%;
+}
 
-#heroVid{
-  
-  
+#heroVid2{
+  margin-top: 23px;
+  height: 100%;
     width: 100%;
   border-radius: 258PX; 
   
 }
 
-#bookImg{
-  height: 100%;
-  margin-bottom: 20%;
+.bookVidContainer {
+ 
+ 
+  width: 100%;
+ 
 }
-#bookVid{
+
+#bookNowVid{
+  max-height: 600px;
   width: 100%;
 }
-.btn{
-  background: #131111;
-    color: #ffffff;
-    border-color: #1d1316;
-    position: absolute;
-    right: 45%;
-}
 
-.btn-danger:hover {
-  color: #fcf5f5;
-  background-color: #181314;
-  border-color: #f8f4f5;
-}
 
-h1{
-  text-shadow: 20px 15px 6px #191010;
-  margin-top: 12%;
-  
-  font-family: 'Codystar', cursive;
-  font-size: 4em;
-  -webkit-text-fill-color: #ec7090;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #f383b1;
-}
-h2{
-  font-family: "Sofia", sans-serif;
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  font-size: 2.5em;
 
-}
-h3{
-  padding: 20px;
-  font-family: "Sofia", sans-serif;
-  font-size: 18px;
-    color: #171616;
-   
-}
 hr {
   margin: 1rem 0;
   color: #170508e0;
@@ -177,41 +146,13 @@ hr {
   padding: 7px;
 }
 
-.bookVidContainer {
- 
- 
-    width: 100%;
-   
-}
-.text1{
 
-  background-size: 37%;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  position: relative;
-  background-color: #000000;
-  text-align: center;
-  border-radius: 10px;
-  width: 100%;
- 
-  border: 5px double #080808;
-}
 
-.text2{
-  height: 100%;
-  border: 5px double #080808;
-  text-shadow: 0 0 19px black;
-  background: url(images/bg\ \(1\).png);
-  background-size: 37%;
-  background-position: bottom;
-  background-repeat: no-repeat;
-}
-.instagram{
-  font-size: 2.5em;
-}
+/* booking *******************************/
+
 
 div.main{
-    
+    background: white;
    /* margin-top: -5%; */
     /* height: 600px; */
 }
@@ -223,22 +164,19 @@ div.main{
    
 }
 
-
+/* gallery *******************************/
 
 .slideshow-container {
     background: #52373700;
-    /* text-align: center; */
-    /* overflow: hidden; */
-    /* max-width: 1000px; */
-    /* height: 600px; */
+   
     width: 100%;
-    /* max-height: 600px; */
+   
     position: relative;
     margin: auto;
     }
   img {
-    width: 100%;
-    height: auto;
+    
+    max-height: 550px;
 
      
     }
@@ -325,12 +263,25 @@ div.main{
   }
 
 footer{
-    background:gray;
-    color:rgb(7, 6, 6);
+  background: black;
+  color: rgb(255 102 196);
 }
   
 
+@media (max-width: 760px){
+  
+  img {
+    
+width: 100%;
+   
+     
+    }
+    .logo {
+      width: 37%;
+      transition: 1s;
+  }
 
+}
 
 
 
