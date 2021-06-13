@@ -5,10 +5,11 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-    document.querySelector(".logo").style.width = "50%";
+    document.querySelector("nav.navbar").style.width = "80%";
+    document.querySelector("nav.navbar").style.margin = "auto";
     
   } else {
-    document.querySelector(".logo").style.width = "90%";
+    document.querySelector("nav.navbar").style.width = "100%";
     
   }
 }

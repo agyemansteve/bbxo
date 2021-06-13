@@ -1,13 +1,7 @@
-body{
-  background: black;
-}
 
 
-header{
-   
-    height: 82px;
 
-}
+
 
 
 .nav-tabs {
@@ -16,46 +10,62 @@ header{
 
 
 nav.navbar{
-  height: 83px;
-  font-size: 18px;
+  height:54px;
+  font-size: 12px;
+  background:linear-gradient(
+    58deg
+    , #ff59afe0, #ffffff61) ;
+    transition: 1s;
 
 }
 .navbar-toggle{
   background: #ce277c;
 }
 
+.nav-link{
+  color: rgb(0, 0, 0);
+}
+
 
 .navbar-light .navbar-nav .nav-link {
-  color:rgb(255, 255, 255) ;
+  color:rgb(0, 0, 0) ;
 }
 .navbar-light .navbar-nav .nav-link:hover {
-  color: rgb(236 68 152);
+  color: rgb(41, 34, 34);
 }
 
-.logo{
-    
-  width: 90%;
-  transition: 1s;
-  
-}
+
+
+
 
 .svg{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
-.nav-container{
-  background: black;
-  
-}
+
 
 div.container{
    
     text-align: center;
+   
     border-radius: 5px;
  
 }
 
+.divider{
+   height: 120px;
+}
 
+
+
+div.middle{ 
+  background: url(images/pinkBrush2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  height: 400px;
+    
+}
 
 /* Home**********************/
 
@@ -64,105 +74,61 @@ div.container{
 
 
 
-div.home{
-  width: 100%;
-
-  background: white;
-   
-  
-}
 
 
-.text2{
+
+.whitebglogo {
   height: 100%;
-  
-  text-shadow: 0 0 19px black;
- 
+  padding: 50%;
   background: url(images/Bella.gif);
-
-  background-size: cover;
-
+  background-size: contain;
   background-repeat: no-repeat;
-}
-
-#heroVid{
- 
-  
-width: 100%;
-
-border-radius: 258PX; 
 
 }
 
-
-
-
-
-div.top{ 
-    background: url(images/pinkBrush2.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    
-
-    
+#heroVid{ 
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 258PX;
+  width: 75%;
 }
 
 
-.topInner{
-  height: 93.5%;
+
+.homebookvidcontainer{
+  text-align: center;
 }
+
+
 
 #bookVid{
-  width: 100%;
+  width: 65%;
+
 }
 
-#heroVid2{
-  margin-top: 23px;
-  height: 100%;
-    width: 100%;
-  border-radius: 258PX; 
-  
-}
 
-.bookVidContainer {
- 
- 
-  width: 100%;
- 
-}
+
+
+/* Booking */
+
+
 
 #bookNowVid{
   max-height: 600px;
   width: 100%;
+  border-radius: 258PX;
 }
 
 
 
-hr {
-  margin: 1rem 0;
-  color: #170508e0;
-  background-color: currentColor;
-  opacity: 1;
-  padding: 7px;
-}
 
 
 
-/* booking *******************************/
 
 
-div.main{
-    background: white;
-   /* margin-top: -5%; */
-    /* height: 600px; */
-}
 
-.mainInner{
-  
-    
-    background: rgb(0 0 0 / 0%);
-   
-}
 
 /* gallery *******************************/
 
@@ -268,26 +234,78 @@ footer{
 }
   
 
-@media (max-width: 760px){
+@media only screen and (max-width: 768px){
+ 
   
+  /* gallery imgs on small screens */
   img {
     
 width: 100%;
    
      
     }
-    .logo {
-      width: 37%;
-      transition: 1s;
-  }
 
+ /* herovid regulation on meduim screens */
+ #heroVid{ 
+   
+    width: 80%;
+  }
 }
 
 
 
 
+@media only screen and  (min-width: 760px){
+ 
+  /* herovid regulation on large screens */
+ #heroVid{ 
+  top: 45%;
+ 
+  width: 55%;
+}
+ 
+  
+ 
+}
+
+@media only screen and  (min-width: 900px){
+ 
+  
+   /* herovid regulation on large screens */
+ 
+  #heroVid{ 
+    top: 28%;
+    width: 35%;
+  }
+
+  .whitebglogo {
+    background-size: 66%;
+    background-position: center;
+    padding: 20%;
+}
+
+#bookVid {
+  width: 30%;
+}
+
+}
+
+@media only screen and  (min-width: 1200px){
+ 
+  
+  /* herovid regulation on large screens */
+
+ #heroVid{ 
+  top: 56%;
+   width: 30% ;
+   
+ }
+
+ .whitebglogo {
+  background-size: 66%;
+  background-position: center;
+  padding: 30%;
+}
+}
 
 
-
-
-    
