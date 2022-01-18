@@ -1,2 +1,2 @@
 # bbxo
-bbxo.netlify.app
+https://bbxo.netlify.app/
