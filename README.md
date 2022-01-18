@@ -1,2 +1,2 @@
 # bbxo
-https://agyemansteve.github.io/bbxo/
+bbxo.netlify.app
