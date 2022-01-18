@@ -178,6 +178,7 @@ window.onload = function () {
             sectionInner.classList.remove("section-div-inner-active");
 
             sectionInner.style.visibility = "hidden";
+            // document.querySelectorAll(".section-inner").style.height = "265vh";
           }
         });
 
@@ -203,6 +204,7 @@ window.onload = function () {
         sectionInners.forEach((sectionInner) => {
           if (sectionInner === this.children[0]) {
             sectionInner.style.visibility = "visible";
+            // document.querySelectorAll(".section-inner").style.height = "135vh";
 
             sectionInner.classList.add("section-div-inner-active");
           } else {

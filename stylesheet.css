@@ -685,6 +685,9 @@ footer {
     transform: translate(-50%, -50%);
     margin-bottom: 0;
   }
+  .column {
+    flex: 100%;
+  }
 
   .card-title {
     font-size: 3rem;
@@ -712,11 +715,23 @@ footer {
     /* background: black */
   }
   .section-inner {
-    height: 130vh;
-    overflow: scroll;
+    /* height: 130vh; */
+    height: 265vh;
+    /* overflow: scroll; */
+  }
+  .section-div-inner-body {
+    margin-top: 11rem;
   }
   .section-div-inner-body-Text {
-    margin: 3rem;
+    margin: 1rem;
+    font-weight: 100;
+    font-size: 1.7rem;
+
+    letter-spacing: 1px;
+    line-height: 55px;
+  }
+  .section-div-inner-body-Img {
+    margin-bottom: 6rem;
   }
   .section-img-active {
     margin-left: -8%;
