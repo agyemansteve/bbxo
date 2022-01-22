@@ -46,7 +46,7 @@
 nav.navbar {
   height: 54px;
   font-size: 12px;
-  background: #ffff;
+  /* background: #ffff; */
   transition: 2s !important;
 }
 .navbar-toggle {
@@ -144,8 +144,8 @@ section {
   opacity: 0;
   /* margin-right: 16vw; */
   /* margin-right: -8vw; */
-  /* height: 50vh; */
-  height: auto;
+  height: 80vh;
+  /* height: auto; */
   margin-bottom: 10vh;
   margin-top: 16vh;
   object-fit: cover;
@@ -486,111 +486,6 @@ margin-top: 200px;
   vertical-align: middle;
 }
 
-/* @-webkit-keyframes bounce-out-top {
-  0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  5% {
-    -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  15% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  25% {
-    -webkit-transform: translateY(-38px);
-    transform: translateY(-38px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  38% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  52% {
-    -webkit-transform: translateY(-75px);
-    transform: translateY(-75px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  70% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  85% {
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateY(-800px);
-    transform: translateY(-800px);
-    opacity: 0;
-  }
-}
-@keyframes bounce-out-top {
-  0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  5% {
-    -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  15% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  25% {
-    -webkit-transform: translateY(-38px);
-    transform: translateY(-38px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  38% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  52% {
-    -webkit-transform: translateY(-75px);
-    transform: translateY(-75px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  70% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  85% {
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateY(-800px);
-    transform: translateY(-800px);
-    opacity: 0;
-  }
-} */
-
 @keyframes anime {
   0% {
     opacity: 0.9;
@@ -658,6 +553,10 @@ footer {
     font-size: 1rem !important;
     letter-spacing: 30px !important;
   }
+  div.top {
+    background-attachment: scroll;
+    background-image: url(images/bella2.jpg);
+  }
 
   .middle::after {
     content: "";
@@ -671,9 +570,9 @@ footer {
     border-radius: 0%;
     /* transform: scale(1.5); */
     top: 2%;
-    background: url(images/bella7.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+    background-image: url(images/bella4.jpg);
+    background-size: contain;
+    background-attachment: scroll;
     background-position: top;
     z-index: -1;
   }
@@ -712,12 +611,9 @@ footer {
   .section-div {
     height: 65vh;
     width: 90%;
-    /* background: black */
   }
   .section-inner {
-    /* height: 130vh; */
     height: 265vh;
-    /* overflow: scroll; */
   }
   .section-div-inner-body {
     margin-top: 11rem;

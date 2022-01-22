@@ -48,6 +48,13 @@ window.onload = function () {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.style.opacity = 1;
+
+          if (window.innerWidth <= 768) {
+            entry.target.children[0].children[0].style.visibility = "visible";
+            entry.target.children[0].children[0].style.background = "white";
+          }
+          // do the same as below card hover
+
           faMouse.style.opacity = 0;
           faChevron.style.opacity = 0;
           faText.style.opacity = 0;
@@ -166,6 +173,30 @@ window.onload = function () {
   //   observercardInnerBodyObserver.observe(body);
   // });
 
+  /////////////////////////////// Card hover //////////////////////
+
+  images.forEach((img) => {
+    img.addEventListener("mouseover", function () {
+      // console.log(this.children[0].children[0].style.visibility="visible");
+      const title = this.children[0].children[0];
+      if (this.classList.contains("section-img-active")) {
+        title.style.background = "";
+      } else {
+        title.style.background = "white";
+      }
+
+      title.style.visibility = "visible";
+    });
+  });
+
+  images.forEach((img) => {
+    img.addEventListener("mouseout", function () {
+      // console.log(this.children[0].children[0].style.visibility="visible");
+      const title = this.children[0].children[0];
+      title.style.visibility = "hidden";
+    });
+  });
+
   /////////////////////////////// Card CLICKS //////////////////////
 
   images.forEach((img) => {
@@ -239,6 +270,7 @@ function scrollFunction() {
     if (window.innerWidth <= 768) {
       document.querySelector("nav.navbar").style.width = "96%";
       document.querySelector("nav.navbar").style.margin = "auto";
+      document.querySelector("nav.navbar").style.background = "transparent ";
       // document.querySelector("#divider").stlye.fill="white";
     } else {
       document.querySelector("nav.navbar").style.width = "40%";
