@@ -268,9 +268,10 @@ function scrollFunction() {
 
   if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
     if (window.innerWidth <= 768) {
+      document.querySelector("nav.navbar").style.background = "transparent ";
       document.querySelector("nav.navbar").style.width = "96%";
       document.querySelector("nav.navbar").style.margin = "auto";
-      document.querySelector("nav.navbar").style.background = "transparent ";
+
       // document.querySelector("#divider").stlye.fill="white";
     } else {
       document.querySelector("nav.navbar").style.width = "40%";
@@ -286,7 +287,7 @@ function scrollFunction() {
   } else {
     document.querySelector("nav.navbar").style.width = "100%";
     document.querySelector(".logo-name").style.fontSize = "28px";
-    document.querySelector("nav.navbar").style.background = "#000 ";
+    document.querySelector("nav.navbar").style.background = "white";
     // document.querySelector("#divider").style.color="white"
     // document.querySelector(".section-inner").scrollTo({
     //   right: 1000,

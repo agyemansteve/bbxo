@@ -46,7 +46,7 @@
 nav.navbar {
   height: 54px;
   font-size: 12px;
-  /* background: #ffff; */
+  background: #ffff;
   transition: 2s !important;
 }
 .navbar-toggle {
@@ -441,24 +441,6 @@ div.top {
   padding-left: 50%;
 }
 
-/* .sidebar > .card:hover{
-margin-top: 200px;
-
-  transform:scale(1.5,1.5)
-  
-
-} */
-
-/* 
-.whitebglogo {
-  height: 100%;
-  padding: 50%;
-  background: url(images/Bella.gif);
-  background-size: contain;
-  background-repeat: no-repeat;
-
-} */
-
 .homebookvidcontainer {
   text-align: center;
 }
@@ -484,6 +466,9 @@ margin-top: 200px;
 .column img {
   margin-top: 8px;
   vertical-align: middle;
+}
+.gallery-img:hover {
+  transform: scale(0.9);
 }
 
 @keyframes anime {
@@ -544,6 +529,9 @@ footer {
   .logo-name {
     letter-spacing: 3px;
   }
+  nav.navbar {
+    background: transparent;
+  }
   .navbar-toggler {
     margin-bottom: 10px;
     border-radius: 0.15rem;
@@ -561,7 +549,7 @@ footer {
   .middle::after {
     content: "";
     position: absolute;
-    background-color: #ce5fb2;
+    background-color: #ffffff;
     /* padding: 38px; */
     width: 100% !important;
     height: 100vh;
@@ -571,9 +559,10 @@ footer {
     /* transform: scale(1.5); */
     top: 2%;
     background-image: url(images/bella4.jpg);
-    background-size: contain;
+    background-size: cover;
+    background-position: 59% 341px;
+    background-repeat: no-repeat;
     background-attachment: scroll;
-    background-position: top;
     z-index: -1;
   }
 
